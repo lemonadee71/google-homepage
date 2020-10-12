@@ -3,7 +3,6 @@ body, p, a {
 }
 
 /** Header **/
-
 header a {
   font-size: 13px;
   text-decoration: none;
@@ -85,23 +84,101 @@ nav .nav-r {
 
 /** Search bar **/
 form input{
-  width: 487px;
-  height: 34px;
+  width: 489px;
+  height: 40px;
   transition: width 0.3s linear;
+  border: 1px solid #dfe1e5;
+  background: #fff;
+  flex-shrink: 2.5;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline: 0;
 }
 
 .searchbar {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
-  background-color: brown;
+  align-items: center;
+  position: relative;
 }
 
 .searchbar img {
-  height: 34px;
+  height: 20px; 
+  color: #9aa0a6;
 }
 
+/**
+form input:hover, #ico-1:hover, #ico-2:hover, #begin-hc:hover, #end-hc:hover {
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border-color: rgba(223,225,229,0);
+}
+
+
+input:hover ~ div {
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border-color: rgba(223,225,229,0);
+}
+
+.searchbar:hover > input {
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border-color: rgba(223,225,229,0);
+}
+**/
+
+
+#ico-1, #ico-2 {
+  height: 42px;
+  width: 24px;
+  background: #fff ;
+  border-top: 1px solid #dfe1e5;
+  border-bottom: 1px solid #dfe1e5;
+  position: relative;
+  vertical-align: middle;
+  z-index: 99;
+}
+
+#ico-1 {
+  right: -1px;
+}
+
+#ico-2 {
+  left: -1px;
+}
+
+#ico-1 img {
+  padding-top: 11px;
+  opacity: 0.6;
+}
+
+#ico-2 img {
+  padding-top: 11px;
+}
+
+#begin-hc {
+  height: 42px;
+  width: 42px;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 50%;
+  position: relative;
+  right: -21px;
+}
+
+#end-hc {
+  height: 42px;
+  width: 42px;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 50%;
+  position: relative;
+  left: -21px;
+}
+
+/** Search buttons **/
 .search-btns {
   text-align: center;
   margin-top: 18px;
@@ -126,8 +203,13 @@ form input{
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-/** Language options **/
+.search-btns button:focus {
+  border: 1px solid #4d90fe;
+  outline: none;
+}
 
+
+/** Language options **/
 .lang {
   text-align: center;
   color: #222;
@@ -136,6 +218,7 @@ form input{
 }
 
 .lang a {
+  color: #1a0dab;
   padding-left: 4px;
   text-decoration: none;
 }
@@ -144,8 +227,11 @@ form input{
   text-decoration: underline;
 } 
 
-/** Footer **/
+.lang a:visited {
+  color: #609;
+}
 
+/** Footer **/
 footer {
   box-sizing: border-box;
   width: 100%;
@@ -186,7 +272,6 @@ footer {
 }
 
 /** Media queries **/
-
 @media (max-width: 805px) {
   .links {    
     flex-direction: column-reverse;
