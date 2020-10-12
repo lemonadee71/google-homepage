@@ -2,6 +2,8 @@ body, p, a {
   font-family: arial, sans-serif;
 }
 
+/** Header **/
+
 header a {
   font-size: 13px;
   text-decoration: none;
@@ -68,25 +70,32 @@ nav .nav-r {
 }
 
 /** Main **/
-
+/** Logo **/
 .logo {
   height: 233px;
   width: 100%;
   text-align: center;
+  transition: height 0.4s ease;
 }
 
 .logo img {
   padding-top: 109px;
+  transition: padding-top 0.4s ease,width 0.4s ease,height 0.4s ease;
 }
 
+/** Search bar **/
 form input{
   width: 487px;
   height: 34px;
+  transition: width 0.3s linear;
 }
 
 .searchbar {
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: center;
+  background-color: brown;
 }
 
 .searchbar img {
@@ -116,6 +125,8 @@ form input{
   color: #222;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
+
+/** Language options **/
 
 .lang {
   text-align: center;
@@ -174,6 +185,8 @@ footer {
   text-decoration: underline;
 }
 
+/** Media queries **/
+
 @media (max-width: 805px) {
   .links {    
     flex-direction: column-reverse;
@@ -184,5 +197,22 @@ footer {
     height: 40px;
     vertical-align: middle;
   }
-  
+}
+
+@media (max-width: 480px) {
+  form input {
+    width: 80%;
+  }  
+}
+
+@media only screen and (max-height: 536px) {
+  .logo {
+    height: 100px;
+  }
+
+  .logo img {
+    padding-top: 10px !important;
+    height: 72px;
+    width: auto;
+  }
 }
