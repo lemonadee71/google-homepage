@@ -1,3 +1,70 @@
-body {
+body, p, a {
+  font-family: arial, sans-serif;
+}
+
+header a {
+  font-size: 13px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+header {
+  padding-top: 15px;
+}
+
+nav {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 0.65);
+  text-decoration: underline;
+}
+
+nav .nav-l {
+  display: flex;
+  min-width: 80px;
   background-color: aqua;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-r {
+  display: flex;
+  min-width: 220px;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-r #btn {
+  display: inline-block;
+  padding: 8.5px 12px;
+  background-color: #4285f4;  
+  color: white;
+  font-weight: bold;
+  border: 1px solid #4285f4;
+  border-radius: 2px;
+}
+
+#btn:hover {
+  box-shadow: 0 1px 0 rgba(0,0,0,.15);
+  text-decoration: none;
+}
+
+.nav-r #box {
+  display: inline-block;
+  background-image: url('/images/assorted_logo.png');
+  background-position: -132px 30.5px;
+  opacity: 0.55;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.nav-r #box:hover {
+  opacity: 1;
 }

@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/homepage.css" />
-    <title>Google Clone</title>
-  </head>
-  <body>
-      <header>
-          <div class="container">
-            <nav class="navbar">
-                <div class="flex">
-                    <ul>
-                        <li><a href="">Gmail</a></li>
-                        <li><a href="">Images</a></li>
-                        <li><a href=""><span id="box">Box goes here</span></a></li>
-                        <li><a href=""><span id="account">Account image goes here</span></a></li>
-                    </ul>
-                </div>
-            </nav>
-          </div>          
-      </header>
-
-      <main>
-          <div class="logo">
-            <img id="google" src="./images/google_logo.png" alt="Google Logo">
-          </div>
-          <div class="search_bar">
-              <!-- Add input here -->
-          </div>
-          <div class="buttons">
-              <!-- Add buttons here -->
-          </div>
-          <div class="languages">
-              <div class="flex">
-                  <!-- Insert text here -->
-              </div>
-          </div>
-      </main>
-    
-      <footer>
-          <div class="container">
-              <div class="country"></div>
-              <div class="links">
-                  <div class="flex">
-                      <ul>
-                          <li><a href="#">Privacy</a></li>
-                          <li><a href="#">Terms</a></li>
-                          <li><a href="#">Settings</a></li>
-                          <li><a href="#">Advertising</a></li>
-                          <li><a href="#">Business</a></li>
-                          <li><a href="#">About</a></li>
-                          <li><a href="#">How Search works</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </footer>
-
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-l">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </div>  
+            <div class="nav-r">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <a href="#" id="box"></a>
+                <a href="https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAAQ" target="_blank" id="btn">Sign In</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="/images/google_logo.png" alt="Google logo">
+        </div>
+        <form action="">
+            <div class="ico-1"></div>
+            <input type="text" class="search">
+            <div class="icon-2"></div>
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </form>
+        <div class="lang">
+            Google offered in:
+            <a href="#">Filipino</a>
+            <a href="#">Cebuano</a>
+        </div>
+    </main>
+    <footer>
+        <div class="country">Philippines</div>
+        <div class="links">
+            <div class="link-l">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">About</a>
+                <a href="#">How Search works</a>
+            </div>
+            <div class="link-r">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
