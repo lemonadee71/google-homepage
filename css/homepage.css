@@ -13,7 +13,6 @@ header {
 }
 
 nav {
-  background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
 }
@@ -26,7 +25,6 @@ nav a:hover {
 nav .nav-l {
   display: flex;
   min-width: 80px;
-  background-color: aqua;
   padding: 0 30px;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +40,7 @@ nav .nav-r {
 
 .nav-r #btn {
   display: inline-block;
-  padding: 8.5px 12px;
+  padding: 8px 12px;
   background-color: #4285f4;  
   color: white;
   font-weight: bold;
@@ -50,7 +48,7 @@ nav .nav-r {
   border-radius: 2px;
 }
 
-#btn:hover {
+.nav-r #btn:hover {
   box-shadow: 0 1px 0 rgba(0,0,0,.15);
   text-decoration: none;
 }
@@ -67,4 +65,124 @@ nav .nav-r {
 
 .nav-r #box:hover {
   opacity: 1;
+}
+
+/** Main **/
+
+.logo {
+  height: 233px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo img {
+  padding-top: 109px;
+}
+
+form input{
+  width: 487px;
+  height: 34px;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar img {
+  height: 34px;
+}
+
+.search-btns {
+  text-align: center;
+  margin-top: 18px;
+  padding: 18px 0 18px 0;
+}
+
+.search-btns button {
+  background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  color: #5F6368;
+  font-size: 14px;
+  height: 36px;
+  padding: 0 18px;
+}
+
+.search-btns button:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.lang {
+  text-align: center;
+  color: #222;
+  font-size: 13px;
+  padding-top: 12px;
+}
+
+.lang a {
+  padding-left: 4px;
+  text-decoration: none;
+}
+
+.lang a:hover {
+  text-decoration: underline;
+} 
+
+/** Footer **/
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #e4e4e4;
+  padding: 12px 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.link-l {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-r {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #5f6368;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 805px) {
+  .links {    
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .link-r {
+    height: 40px;
+    vertical-align: middle;
+  }
+  
 }
