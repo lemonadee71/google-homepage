@@ -1,3 +1,46 @@
 body {
   background-color: aqua;
+  font-family: arial,sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+#navbar .flex {
+  width: 400px;
+  float: right;
+  background-color: azure;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 13px;
+}
+
+.flex ul{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#box {
+  display: inline-block;
+  background-image: url('/images/assorted_logo.png');
 }
